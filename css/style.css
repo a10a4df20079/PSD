@@ -260,3 +260,14 @@ tr:nth-child(1){
 .footimg{
     padding-top: 10px;
 }
+#myBtn{
+    position: fixed;
+    bottom: 100px;
+    right: 800px;
+    border-radius: 90px;
+    cursor:pointer;
+    opacity: 0.5;
+}
+#myBtn{
+    background: blue;
+}
