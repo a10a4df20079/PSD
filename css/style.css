@@ -48,7 +48,7 @@ table {
 }
 .all{
     width: 977px;
-    width: 0 auto;
+    margin: 0 auto;
 }
 .link{
     background: #f6f6f6;
@@ -260,15 +260,11 @@ tr:nth-child(1){
 .footimg{
     padding-top: 10px;
 }
-.buttom{
-    border: 1px solid #000;
-    position: relative;
-    width: 100px;
-}
+
 .ring{
     position: fixed;
-    bottom: 100px;
-    right: 800px;
+    bottom: 8%;
+    right: 20%;
     border-radius: 90px;
     cursor:pointer;
     opacity: 0.5;
