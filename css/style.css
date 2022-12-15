@@ -260,7 +260,12 @@ tr:nth-child(1){
 .footimg{
     padding-top: 10px;
 }
-#myBtn{
+.buttom{
+    border: 1px solid #000;
+    position: relative;
+    width: 100px;
+}
+.ring{
     position: fixed;
     bottom: 100px;
     right: 800px;
@@ -268,6 +273,6 @@ tr:nth-child(1){
     cursor:pointer;
     opacity: 0.5;
 }
-#myBtn{
+.ring:hover{
     background: blue;
 }
