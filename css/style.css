@@ -1,0 +1,262 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.all{
+    width: 977px;
+    width: 0 auto;
+}
+.link{
+    background: #f6f6f6;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.link a{
+    text-decoration: none;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.top h1{
+    float: left;
+}
+.top h1 a{
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png);
+    display: block;
+    width: 200px;
+    height: 50px;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.top ul{
+    display: flex;
+    float: right;
+    margin: 15px;
+}
+.top li a{
+    text-decoration: none;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #0fcf9f;
+}
+.top li a:hover{
+    text-decoration: underline;
+    text-underline-offset: 25px;
+    text-decoration-thickness: 4px;
+}
+.banner{
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png);
+    height: 346px;
+    width: 977px;
+    margin-top: 58px;
+    position: absolute;
+}
+.box{
+    width: 977px;
+    height: 150px;
+    position: absolute;
+    background: black;
+    opacity: 0.3;
+    top: 100px;
+    z-index: 1;
+    
+}
+.banner h1{
+    position: absolute;
+    height: 346;
+    color: white;
+    font-size: 30px;
+    padding-top: 130px;
+    padding-left: 30px;
+    line-height: 40px;
+    z-index: 2;
+}
+.center{
+
+    width: 956px;
+    display:flex;
+    padding-top: 400px;
+    padding-left: 20px;
+}
+.html, .web, .jquery{
+    border: 1px solid #fafafa;
+    width: 260px;
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    box-shadow: 0px 0px 10px 2px rgb(0, 50, 0, 0.2);
+}
+.center img{
+    width: 250px;
+    height: 150px;
+}
+.center h2{
+    font-weight: bold;
+    font-family: Noto Sans CJK TC;
+    color: #4e4e4e;
+    padding-left: 70px;
+}
+.center p{
+    padding-top: 10px;
+    line-height: 20px;
+    font-size: 15px;
+}
+.center li{
+    list-style: disc;
+    font-size: 15px;
+    margin-left: 18px;
+    line-height: 20px;
+}
+.list h1{
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-left: 330px;
+    padding-bottom: 20px;
+    color:#4e4e4e;
+}
+.listcontent{
+    margin-left: 80px;
+    margin-bottom: 50px;
+    width: 800px;
+    font-family: noto sans cjk tc;
+    color:#4e4e4e;
+}
+tr:nth-child(1){
+    background-color:  #e8e8e8;;color:#4e4e4e;
+    text-align: left;  
+}
+.listcontent th{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;    
+}
+.listcontent td{
+    border-top:1px solid #9c9c9c;
+    border-right:1px solid #ffff;
+    border-bottom:1px solid #9c9c9c;
+    border-left:1px solid #ffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;  
+}
+.green{
+    color:#0fcf9f;
+}
+.bottom{
+    background-image: url(../img/BG_03.png);
+    height: 360px;
+    position: relative;
+}
+.bottom h2{
+    font-family: Noto Sans CJK TC;
+    color: white;
+    padding-left: 350px; 
+    font-size: 30px;
+    padding-top: 20px;
+}
+.bottom-content{
+    width: 470px;
+    margin-left: 500px;
+    position: absolute;
+    bottom: 60px;
+
+}
+.bottom-content input{
+    margin-bottom: 20px;
+    width: 400px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    border: white;
+}
+.bottom-content label{
+    color:white;
+    font-size: 15px;
+}
+.submit1{
+  background: #00cc99;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border:1px solid #00cc99;
+  border-radius: 5px;
+  color: white;
+  bottom: 20px;
+  right: 70px;
+  position: absolute;
+}
+.submit1:hover{
+    background: white;
+    color: #4e4e4e;
+}
+.bottom textarea{
+    margin-top: 40px;
+    margin-left: 20px;
+    border: white;
+    border-radius: 3px;
+}
+.foot{
+    display:flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    padding-right: 10px;
+    font-family: Noto Sans CJK TC;
+}
+.foot span{
+    color:red;
+}
+.foot li{
+    margin-bottom: 10px;
+    color: #4e4e4e;
+}
+.footimg{
+    padding-top: 10px;
+}
