@@ -46,23 +46,36 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-.all{
+.wrap{
     width: 977px;
     margin: 0 auto;
 }
 .link{
     background: #f6f6f6;
+    padding: 10px 0px;
+}
+.link ul{
     display: flex;
     justify-content: flex-end;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    
 }
 .link a{
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 15px;
     margin-top: 20px;
 }
+.fb{
+    border-right:2px solid gray;
+}
+.twitter{
+    padding-left: 10px;
+}
+.clearfix{
+    clear:both;
+}
 .top h1{
+    background: white;
+    padding-bottom: 10px;
     float: left;
 }
 .top h1 a{
@@ -93,36 +106,28 @@ table {
 .banner{
     background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png);
     height: 346px;
-    width: 977px;
-    margin-top: 58px;
-    position: absolute;
-}
-.box{
-    width: 977px;
-    height: 150px;
-    position: absolute;
-    background: black;
-    opacity: 0.3;
-    top: 100px;
-    z-index: 1;
-    
+    position: relative;
+    overflow: hidden;
 }
 .banner h1{
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 100%;
     position: absolute;
-    height: 346;
-    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 50px 0 50px 20px;
     font-size: 30px;
-    padding-top: 130px;
-    padding-left: 30px;
-    line-height: 40px;
-    z-index: 2;
+    line-height: 1.4;
 }
 .center{
-
     width: 956px;
-    display:flex;
-    padding-top: 400px;
-    padding-left: 20px;
+    margin-top: 10px;
+}
+.center ul{
+    display: flex;
+    justify-content: space-around;
 }
 .html, .web, .jquery{
     border: 1px solid #fafafa;
@@ -189,34 +194,36 @@ tr:nth-child(1){
 .green{
     color:#0fcf9f;
 }
-.bottom{
+.form{
     background-image: url(../img/BG_03.png);
-    height: 360px;
-    position: relative;
+    padding: 23px 15px;
 }
-.bottom h2{
+.form form{
+    display: flex;
+    justify-content: space-between;
+}
+.form h2{
     font-family: Noto Sans CJK TC;
+    font-size: 30px;
     color: white;
     padding-left: 350px; 
-    font-size: 30px;
+    padding-bottom: 20px;
     padding-top: 20px;
 }
-.bottom-content{
-    width: 470px;
-    margin-left: 500px;
-    position: absolute;
-    bottom: 60px;
-
+.form-content{
+    display: flex;
+    flex-direction: column;
 }
-.bottom-content input{
-    margin-bottom: 20px;
+.form-content input{
+    margin-bottom: 10px;
     width: 400px;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 5px;
     border: white;
+    display: block;
 }
-.bottom-content label{
+.form-content label{
     color:white;
     font-size: 15px;
 }
@@ -228,19 +235,17 @@ tr:nth-child(1){
   border:1px solid #00cc99;
   border-radius: 5px;
   color: white;
-  bottom: 20px;
-  right: 70px;
-  position: absolute;
 }
 .submit1:hover{
     background: white;
     color: #4e4e4e;
 }
-.bottom textarea{
-    margin-top: 40px;
+.form textarea{
+    margin-top: 10px;
     margin-left: 20px;
     border: white;
     border-radius: 3px;
+    resize: none;
 }
 .foot{
     display:flex;
@@ -264,7 +269,7 @@ tr:nth-child(1){
 .gotop{
     position: fixed;
     bottom: 10%;
-    right: 20%;
+    right: 18%;
     border-radius: 90px;
     cursor:pointer;
     opacity: 0.5;
